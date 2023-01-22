@@ -1,17 +1,17 @@
 public class pattern {
     public static void main(String[] args) {
-        int rows = 8, i, j, space;
+        int n= 3;
 
-        for (i = rows; i >= 1; --i){
-            for (space = 0; space < rows - i; ++space)
-                System.out.print("  ");
-
-            for (j = i; j <= 2 * i - 1; ++j)
+        for (int i=0; i<=n; i++){
+            for (int j=0; j<=i; j++){
+                System.out.print(" ");
+            }
+            for (int j=n-i; j>=1; j-- ){
                 System.out.print("* ");
-
-            for (j = 0; j < i - 1; ++j)
-                System.out.print("* ");
+            }
+  
             System.out.println();
-        }
+    }
     }
 }
+
